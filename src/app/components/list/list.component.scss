@@ -1,0 +1,49 @@
+$navy-blue: #17252A;
+$dark-blue: #2B7A78;
+$blue: #3AAFA9;
+$light-blue: #DEF2F1;
+$white: #FEFFFF;
+
+.btn-link:hover {
+  color: #0056b3;
+  text-decoration: none !important;
+}
+
+.list {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+.list>li {
+  cursor: pointer;
+
+  &:hover {
+    border-bottom: 1px dashed $dark-blue;
+  }
+}
+
+.showActions {
+  display: none;
+  float: right;
+}
+
+.listItem:hover .showActions {
+  display: block;
+}
+
+.edit {
+  color: orange;
+  margin-right: 5px;
+}
+
+.delete {
+  color: red;
+}
+
+.card-header {
+  background-color: $dark-blue;
+}
+
+.card-title {
+  color: $white
+}
