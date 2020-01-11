@@ -8,7 +8,8 @@
             <span *ngIf="showList" data-toggle="collapse" data-target="#collapseOne"><i
                 class="far fa-minus-square"></i></span>
             <span *ngIf="!showList" data-toggle="collapse" data-target="#collapseOne"><i
-                class="far fa-plus-square"></i></span> Groceries
+                class="far fa-plus-square"></i></span> Groceries <span
+              class="badge badge-light text-right">{{list.length}}</span>
           </span>
         </button>
       </h5>
@@ -17,7 +18,8 @@
     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
       <div class="card-body">
         <ul class="list">
-          <li *ngFor="let item of list; let i = index;" class="listItem">{{item}}
+          <li *ngFor="let item of list; let i = index;" id="{{'item' + i}}" class="listItem"><span
+              (click)="completeItem(i);">{{item}}</span>
             <span class="showActions">
               <i class="fas fa-edit edit" (click)="editItem(i);"></i>
               <i class="fas fa-trash delete" (click)="deleteItem(i);"></i>

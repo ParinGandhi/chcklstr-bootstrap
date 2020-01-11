@@ -47,4 +47,13 @@ export class ListComponent implements OnInit {
     $('#exampleModal').modal('hide');
   }
 
+  completeItem(index) {
+    const completedItem = document.getElementById('item' + index);
+    if (completedItem.classList.contains('completedItem')) {
+      completedItem.classList.remove('completedItem');
+    } else {
+      completedItem.classList.add('completedItem');
+    }
+  }
+
 }

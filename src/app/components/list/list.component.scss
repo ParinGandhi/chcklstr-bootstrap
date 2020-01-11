@@ -47,3 +47,9 @@ $white: #FEFFFF;
 .card-title {
   color: $white
 }
+
+.completedItem {
+  text-decoration: line-through;
+  color: $blue;
+  font-style: italic;
+}
