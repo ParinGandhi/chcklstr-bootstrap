@@ -35,7 +35,7 @@ export class ListComponent implements OnInit {
     this.originalItemToEdit = JSON.parse(JSON.stringify(this.itemToEdit));
     this.indexOfItemToEdit = index;
     // this.editedItem = null;
-    $('#exampleModal').modal('show');
+    this.$('#exampleModal').modal('show');
   }
 
   deleteItem(index) {
@@ -44,7 +44,7 @@ export class ListComponent implements OnInit {
 
   updatedItem() {
     this.list[this.indexOfItemToEdit] = this.editedItem;
-    $('#exampleModal').modal('hide');
+    this.$('#exampleModal').modal('hide');
   }
 
   completeItem(index) {

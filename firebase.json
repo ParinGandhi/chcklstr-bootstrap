@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/chcklstr-bootstrap",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
